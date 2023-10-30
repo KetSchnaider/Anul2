@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Story Task</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+			<!-- Header -->
+			<header id="header">
+				<div class="logo container">
+					<div>
+						<p>A story-maker site</p>
+					</div>
+				</div>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="create.html">Create</a></li>
+					<li class="current"><a href="profile.html">Profile</a></li>
+				</ul>
+			</nav>
+			<!-- Main -->
+			<section id="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<section class="box features">
+								<div class="col-12">
+									<h2>User Information</h2>
+									<form action="update_user.php" method="post">
+										<div class="row gtr-50">
+											<div class="col-12">
+												<label for="name">Name:</label>
+												
+													<h1 class="poka">
+														HUI
+													</h1>
+												
+											</div>
+											<div class="col-12">
+												<label for="email">Email:</label>
+												<h1 class="poka">
+													HUI@gmail.com
+												</h1>											</div>
+											<div class="col-12">
+												<label for="phone">Phone:</label>
+												<h1 class="poka">
+													+37369696969
+												</h1>											</div>
+											
+										</div>
+									</form>
+								</div>
+							</section>
+						</div>
+						<div class="col-6">
+							<section class="box features">
+								<div class="col-12">
+									<h2>Update Information</h2>
+									<form action="process_story.php" method="post">
+										<div class="row gtr-50">
+											<!-- Add fields for updating user information on the right side -->
+											<div class="col-12">
+												<label for="new_name">New Name:</label>
+												<input type="text" name="new_name" id="new_name" placeholder="New Name" required>
+											</div>
+											<div class="col-12">
+												<label for="new_email">New Email:</label>
+												<input type="email" name="new_email" id="new_email" placeholder="New Email" required>
+											</div>
+											<div class="col-12">
+												<label for="new_phone">New Phone:</label>
+												<input type="tel" name="new_phone" id="new_phone" placeholder="New Phone Number" required>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li>
+														<input type="submit" value="Update Information" class="button large">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+							
+					
+						</div>
+						<section class="box features">
+							<h2 class="major"><span>Your story</span></h2>
+							<div>
+								<div class="row">
+									<div class="col-3 col-6-medium col-12-small">
+
+										<!-- Feature -->
+											<section class="box feature">
+												<a href="story.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+												<h3><a href="story.html">Story#1</a></h3>
+												<p>
+												Descprition of story
+												</p>
+											</section>
+
+									</div>
+									<div class="col-3 col-6-medium col-12-small">
+
+										<!-- Feature -->
+											<section class="box feature">
+												<a href="story.html" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+												<h3><a href="story.html">Story#2</a></h3>
+												<p>
+												Descprition of story
+
+												</p>
+											</section>
+
+									</div>
+									<div class="col-3 col-6-medium col-12-small">
+
+										<!-- Feature -->
+											<section class="box feature">
+												<a href="story.html" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+												<h3><a href="story.html">Story#3</a></h3>
+												<p>
+													Descprition of story
+												</p>
+											</section>
+								</div>
+									<div class="col-3 col-6-medium col-12-small">
+									<!-- Feature -->
+											<section class="box feature">
+												<a href="story.html" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+												<h3><a href="story.html">Story#4</a></h3>
+												<p>													
+													Descprition of story
+												</p>
+											</section>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+				</div>
+			</section>
+			
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

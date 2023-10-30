@@ -1,0 +1,10 @@
+Moldova Europa 2512800
+Romania Europa 20121641
+Franta Europa 67000000
+Germania Europa 83000000
+SUA AmericadeNord 331000000
+Canada AmericadeNord 38000000
+Japonia Asia 125000000
+China Asia 1400000000
+Spania Europa 47000000
+Australia Australia 25000000
