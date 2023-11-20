@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ursul pacalit de vulpe</title>	
+		<h1 align=center style="font-size:260%"><u>Ursul pacalit de vulpe</u></h1>
+	<div align=center>		
+			<cite>de Ion Creanga</cite>
+	</div>
+	<style type="text/css">
+		p {
+			margin:20px 20% 20px 20%;
+			text-indent:25px;
+			font-size : 18px;
+		}
+		caption {
+			color : #F90141;
+			font-size : 20px;
+		}
+		.atentionare 
+		{
+		color: blue;
+		}
+		form 
+		{
+		text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<table border="5" align="right" width="280px">
+	   <caption><strong>Situatia Personajelor</strong></caption>
+	   <tr id="titlu">
+	   	<th>Epizodul</th>
+	    <th>Ursul</th>
+	    <th>Vulpea</th>
+	   </tr>
+		   <tr><td id="numerotare" align="center">1.</td><td id="urs">&#128293;flamand<br><hr>&#128293;nevoias</td><td id="vulpe">&#128293;flamanda<br><hr>&#128293;isteata</td></tr>
+		   <tr><td id="numerotare" align="center">2.</td><td id="urs">&#128293;flamand<br><hr>&#128293;bucuros</td><td id="vulpe">&#128293;satula<br><hr>&#128293;isteata</td></tr>
+		   <tr><td id="numerotare" align="center">3.</td><td id="urs">&#128293;flamand<br><hr>&#128293;suparat</td><td id="vulpe">&#128293;satula<br><hr>&#128293;fericita</td></tr>
+		   <tr><td id="numerotare" align="center">4.</td><td id="urs">&#128293;flamand<br><hr>&#128293;inciudat</td><td id="vulpe">&#128293;satula<br><hr>&#128293;bucuroasa</td></tr>
+		   <tr><td id="numerotare" align="center">5.</td><td id="urs">&#128293;flamand<br><hr>&#128293;nervos</td><td id="vulpe">&#128293;satula<br><hr>&#128293;isteata</td></tr>
+	   	   <tr><td id="numerotare" align="center">6.</td><td id="urs">&#128293;necajit<br><hr>&#128293;pacalit</td><td id="vulpe">&#128293;satula<br><hr>&#128293;desteapta</td></tr>
+	</table>
+
+	<div>
+	<i>
+		<p> <b>1)</b> Era odată o vulpe vicleană, ca toate vulpile. Ea umblase o noapte întreagă după hrană şi nu găsise nicăiri. Făcându-se ziua albă, vulpea iese la marginea drumului şi se culcă sub o tufă, gândindu-se ce să mai facă, ca să poată găsi ceva de mâncare.</p>
+
+		<p>Şăzând vulpea cu botul întins pe labele de dinainte, îi vine miros de peşte. Atunci ea rădică puţin capul şi, uitându-se la vale, în lungul drumului, zăreşte venind un car tras de boi.
+		– Bun! gândi vulpea. Iaca hrana ce-o aşteptam eu. Şi îndată iese de sub tufă şi se lungeşte în mijlocul drumului, ca şi cum ar fi fost moartă.</p>
+
+		<p>Carul apropiindu-se de vulpe, ţăranul ce mâna boii o vede şi, crezând că-i moartă cu adevărat, strigă la boi: Aho! Aho! Boii se opresc. Ţăranul vine spre vulpe, se uită la ea de aproape şi, văzând că nici nu suflă, zice: Bre! da’ cum naiba a murit vulpea asta aici?! Ti! ce frumoasă caţaveică am să fac nevestei mele din blana istui vulpoiu! Zicând aşa, apucă vulpea de după cap şi, târând-o până la car, se opinteşte ş-o aruncă deasupra peştelui. Apoi strigă la boi: "Hăis! Joian, cea! Bourean". Boii pornesc.</p>
+
+		<p>Ţăranul mergea pe lângă boi şi-i tot îndemna să meargă mai iute, ca s-ajungă degrabă acasă şi să ieie pelea vulpii.
+		Însă, cum au pornit boii, vulpea a şi început cu picioarele a împinge peştele din car jos. Ţăranul mâna, carul scârţâia, şi peştele din car cădea.</p>
+		
+
+		<p>După ce hoaţa de vulpe a aruncat o mulţime de peşte pe drum, bine…şor! sare şi ea din car şi, cu mare grabă, începe a strânge peştele de pe drum.</p>
+		<img style="margin-left:24%" src="imagini/img0.jpg" width="50%" height="800px" >
+
+		<p> <b>2)</b> După ce l-a strâns grămadă, îl ia, îl duce la bizunia sa şi începe a mânca, că ta…re-i mai era foame!</p>
+
+		<p>Tocmai când începuse a mânca, iaca vine la dânsa ursul.
+		– Bună masa, cumătră! Ti!!! da’ ce mai de peşte ai! Dă-mi şi mie, că ta…re! mi-i poftă!
+		– Ia mai pune-ţi pofta-n cuiu, cumătre, că doar nu pentru gustul altuia m-am muncit eu. Dacă ţi-i aşa de poftă, du-te şi-ţi moaie coada-n baltă, ca mine, şi-i avea peşte să mănânci.
+		– Învaţă-mă, te rog, cumătră, că eu nu ştiu cum se prinde peştele.
+		Atunci vulpea rânji dinţii şi zise: Alei, cumătre! da’ nu ştii că nevoia te duce pe unde nu-ţi e voia şi te-nvaţă ce nici gândeşti? Ascultă, cumătre: vrei să mănânci peşte? Du-te desară la băltoaga cea din marginea pădurei, vârâ-ţi coada-n apă şi stăi pe loc, fără să te mişti, până despre ziuă; atunci smunceşte vârtos spre mal şi ai să scoţi o mulţime de peşte, poate îndoit şi-ntreit de cât am scos eu.</p>
+		<img style="margin-left:24%" src="imagini/img1.jpg" width="50%" height="800px" >
+
+		<p> <b>3)</b> Ursul, nemaizicând nici o vorbă, aleargă-n fuga mare la băltoaga din marginea pădurei şi-şi vâră-n apă toată coada!
+		În acea noapte începuse a bate un vânt răce, de îngheţa limba-n gură şi chiar cenuşa de sub foc. Îngheaţă zdravăn şi apa din băltoagă, şi prinde coada ursului ca într-un cleşte. De la o vreme, ursul, nemaiputând de durerea cozei şi de frig, smunceşte o dată din toată puterea. Şi, sărmanul urs, în loc să scoată peşte, rămâne făr’ de coadă!</p>
+		<img style="margin-left:24%" src="imagini/img2.jpg" width="50%" height="800px" >
+<H1 style ="text-align:center"> DELETE  DATE NUME_AUTOR </H1>
+
+<?php
+// Conectare la server 
+   require_once 'connectare.php';
+// Prezentare tabel Autor
+   require_once '1task_AFISARE_TABEL_AUTOR.php';
+// definirea variabilelor de lucru
+	$nume_autor = $eroarenumeautor= "";
+//  detalii aici https://www.quora.com/Why-do-some-PHP-programmers-use-_SERVER-REQUEST_METHOD-POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
+  if (empty($_POST["nume_autor"])) 
+  {
+    $eroarenumeautor = "Se cere a fi introdus Nume_autor";
+  } else 
+  {
+    $nume_autor = procesare_input($_POST["nume_autor"]);
+    // Verificare daca numele contine litere si spatii
+    if (!preg_match("/^[a-zA-Z ]*$/",$nume_autor)) 
+	{
+      $eroarenumeautor = "Se introduc doar litere si spatii";
+    }
+  }
+} 
+function procesare_input($data) 
+{
+  $data = trim($data);
+  return $data;
+}
+?>
+<p><span style="align:center" class="atentionare">* se cere a fi completata obligator</span></p>
+<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Nume_autor: <input type="text" name="nume_autor" value="<?php echo $nume_autor;?>">
+  <span class="atentionare">* <?php echo $eroarenumeautor;?></span>
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>	
+<?php
+//Lucrul cu comanda DELETE  pentru cautarea datelor
+$query= mysqli_query($link,"SELECT id_autor FROM autor  WHERE  nume_autor='".$nume_autor."'");
+
+if(mysqli_num_rows($query) > 0){
+
+    $row=mysqli_fetch_array($query, MYSQLI_ASSOC); // fetch the data
+    $query= mysqli_query($link,"DELETE FROM autor WHERE nume_autor='".$nume_autor."'");
+    $respons="DATE_ELIMINATE";
+} else {
+
+    $respons= "NU SUNT_DATE";
+}
+
+if(!empty($row))
+{
+//Echo "Autorul  ".$row['nume_autor']. "  este in BD:"."<br/>";
+echo "<p align=center >"."Autorul ".$nume_autor." este ELIMINAT Din BD:"."</p>";
+require '1task_AFISARE_TABEL_AUTOR.php'; 
+//exit('<meta http-equiv="refresh" content="0; url=1task.php" />');
+}
+else
+{
+echo "<p align=center >"."Autorul ".$nume_autor." nu este in BD:"."</p>";
+require '1task_AFISARE_TABEL_AUTOR.php'; 
+//	exit('<meta http-equiv="refresh" content="0; url=1task.php" />');
+}
+?>
+		<p> <b>4)</b> Începe el acum a mornăi cumplit ş-a sări în sus de durere; şi-nciudat pe vulpe că l-a amăgit, se duce s-o ucidă în bătaie. Dar şireata vulpe ştie cum să se ferească de mânia ursului. Ea ieşise din bizunie şi se vârâse în scorbura unui copac din apropiere; şi când văzu pe urs că vine făr’ de coadă, începu a striga:
+		– Hei cumătre! Dar ţi-au mâncat peştii coada, ori ai fost prea lacom ş-ai vrut să nu mai rămâie peşti în baltă?</p>
+		<img style="margin-left:24%" src="imagini/img3.jpg" width="50%" height="800px" >
+
+		<p> <b>5)</b> Ursul, auzind că încă-l mai ie şi în râs, se înciudează şi mai tare şi se răpede iute spre copac; dar gura scorburei fiind strâmtă, ursul nu putea să încapă înlăuntru. Atunci el caută o creangă cu cârlig şi începe a cotrobăi prin scorbură, ca să scoată vulpea afară, şi să-i deie de cheltuială… Dar când apuca ursul de piciorul vulpei, ea striga: "Trage, nătărăule! mie nu-mi pasă, că tragi de copac…" Iar când anina cârligul de copac, ea striga: "Valeu, cumătre! nu trage, că-mi rupi piciorul!"</p>
+		<img style="margin-left:24%" src="imagini/img4.jpg" width="50%" height="800px" >
+
+		<p> <b>6)</b> În zadar s-a năcăjit ursul, de-i curgeau sudorile, că tot n-a putut scoate vulpea din scorbura copacului.
+		Şi iaca aşa a rămas ursul păcălit de vulpe!</p><br><br>
+	</i>
+	</div>
+
+</body>
+</html>

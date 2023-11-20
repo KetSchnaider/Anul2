@@ -6,7 +6,7 @@
 body {
     font-family: "Sue Ellen Francisco", cursive;
     font-size: 10px;
-    background-image: url("/public/img/fresh_snow.png");
+    background-image: URL("images/fresh_snow.png");
     height: 100px;
 }
 
@@ -190,6 +190,11 @@ body.show-fun-fact-popup-incorrect .fun-fact-popup-incorrect {
 }
 
 /* Style for index.html */
+
+#not-clickable {
+    pointer-events: none;
+}
+
 header {
     text-align: center;
     font-family: "Amatic SC", cursive;

@@ -19,29 +19,27 @@
 	</header>
 
 	<div id="drag-content">
-		<figure id="costume">
-			<img src="{{ asset('/img/costume.gif') }}" alt="Wolf Suit">
-		</figure>
+
 
 		<section id="name-in-story-form">
 			<form method="get" action="index.html">
 				<fieldset>
 					<legend>
-						<h2>Make your story</h2>
+						<h2>Select your character</h2>
 					</legend>
-						<div class="form-item">
-								<h2>Select your character</h2>							<div class="form-element">
-								<select name="gender" id="gender">
-									<option value="character1">character1</option>
-									<option value="character2">character2</option>
-                                    <option value="character3">character3</option>
-                                    <option value="character4">character4</option>
-                                    <option value="character5">character5</option>
-                                    <option value="character6">character6</option>
-								</select>
+					@foreach ($personaje as $personaj)
+    <div class="form-item">
+        <a href="/first">
+            <img src="{{ asset('/img/costume.gif') }}" alt="boat">
+        </a>
+        <h2 class="not-clickable">{{ $personaj->name }}</h2>
+
+@endforeach
+						
+									
+
 							</div>
 						</div>
-						<button class="button" type="submit">Submit</button>
 					</div>
 				</fieldset>	
 			</div>
