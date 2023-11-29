@@ -1,0 +1,12 @@
+[
+    {
+        "DEST": "Bucuresti",
+        "NUMR": 564,
+        "TIP": "Airbus"
+    },
+    {
+        "DEST": "Chisinau",
+        "NUMR": 565,
+        "TIP": "Boieng"
+    }
+]

@@ -1,22 +1,36 @@
 #include <iostream>
 #include <math.h>
-#define N 3
+#define N 4
 using namespace std;
+
 
 float A[4][4] = 
 {
-    7.5, 1.1, 0.9, 1.3,
-    1.1, 9, 2.1, 0.5,
-    0.9, 2.1, 10.3, 1.2,
-    -1.3, 0.5, 1.2, 13.1,
+    (7.1 + 0.1*N), 1.1, 0.9, -1.3,
+    1.1, (8.2 +0.2*N), 2.1, 0.5,
+    0.9, 2.1, (9.1+0.3*N), 1.2,
+    -1.3, 0.5, 1.2, (10.5+0.4*N),
 };
 
 float B[4] = 
-{12.8, 
-16.9, 
-21.5, 
-15.2};
+{(10.8 + 0.5*N), 
+(10.9 +1.5*N), 
+(11.5+2.5*N), 
+(11.2+N)};
 
+bool verificaSolutie(float x[N]) {
+    float epsilon = 0.000001;
+    for (int i = 0; i < N; i++) {
+        float suma = 0.0;
+        for (int j = 0; j < N; j++) {
+            suma += A[i][j] * x[j];
+        }
+        if (fabs(suma - B[i]) > epsilon) {
+            return true;
+        }
+    }
+    return false;
+}
 // Determinantul
 float determinant() {
     int n = 4;
@@ -232,18 +246,31 @@ int main() {
         cout << "[ 1 ] Gauss" << endl;
         cout << "[ 2 ] Jacobi" << endl;
         cout << "[ 3 ] Gauss-Seidel" << endl;
-        cout << "[ 4 ] Determinant" << endl;  // Adăugăm opțiunea pentru determinant
+        cout << "[ 4 ] Determinant" << endl; 
         cout << "[ 0 ] Iesi din consola" << endl;
         cout << "Comanda >> ";
         cin >> i;
+
+        float x[N];  // Vectorul pentru a stoca solutiile
+
         switch (i) {
-        case 1: Gauss(); break;
-        case 2: jacobi(); break;
-        case 3: gaussseidel(); break;
+        case 1: 
+            Gauss();
+            cout << "Verificare solutie Gauss: " << (verificaSolutie(B) ? "Solutie valida" : "Solutie invalida") << endl;
+            break;
+        case 2: 
+            jacobi();
+            cout << "Verificare solutie Jacobi: " << (verificaSolutie(B) ? "Solutie valida" : "Solutie invalida") << endl;
+            break;
+        case 3: 
+            gaussseidel();
+            cout << "Verificare solutie Gauss-Seidel: " << (verificaSolutie(B) ? "Solutie valida" : "Solutie invalida") << endl;
+            break;
         case 4:
             cout << "Determinantul matricei sistemului: " << determinant() << endl;
             break;
-        case 0: return 0;
+        case 0: 
+            return 0;
         }
     }
 }

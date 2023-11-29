@@ -1,0 +1,171 @@
+html,
+body {
+  font-family: "Atma", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("./banner.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Adjust text color for better visibility on the background image */
+}
+
+header {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent black background for better readability */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background for better readability */
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+.action-buttons button {
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#editButton {
+  background-color: #3498db; /* Blue color for Edit button */
+}
+
+#createButton {
+  background-color: #2ecc71; /* Green color for Create button */
+}
+
+#deleteButton {
+  background-color: #e74c3c; /* Red color for Delete button */
+}
+
+#viewButton {
+  background-color: #cbe73c; /* Red color for Delete button */
+}
+
+.story-content {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background for better readability */
+}
+
+.story-content p {
+  line-height: 1.6;
+  color: #555;
+}
+
+.form-content {
+  max-width: 1600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.story-part {
+  font-size: 21px; /* Adjust the font size as needed */
+  line-height: 1.5; /* Adjust the line height as needed */
+  margin-bottom: 20px; /* Optional: Add margin between parts */
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+#prevButton {
+  background-color: #3498db; /* Blue color for Previous button */
+}
+
+#nextButton {
+  background-color: #2ecc71; /* Green color for Next button */
+}
+
+body {
+  color: black;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+header h1 {
+  color: white; /* Set text color for h1 inside the header */
+}
+
+/* Rest of your existing styles */
+
+.action-buttons button,
+label {
+  color: black;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+#formSection {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the section horizontally */
+}
+
+#formSection form {
+  text-align: left; /* Center the form content */
+  margin-bottom: 20px; /* Add space between forms */
+}
+
+#formSection h2,
+#formSection h3 {
+  text-align: left; /* Center the heading text */
+}

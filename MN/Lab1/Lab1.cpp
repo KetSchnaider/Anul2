@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cmath>
 #include <iomanip>
@@ -14,7 +13,7 @@ double df(double x) //derivata ecuatiei
     return (pow(E,x)/10) + 3 * pow(x,2)-2;
 }
 
-double metodaBisectiei(double a, double b, double epsilon, int& iteratii)
+double BisectMethod(double a, double b, double epsilon, int& iteratii)
 {
   double x = a;
   while ((b - a) >= epsilon)
@@ -29,33 +28,36 @@ double metodaBisectiei(double a, double b, double epsilon, int& iteratii)
       a = x;
     }
     iteratii++;
+    // cout << "Iteratie " << iteratii << ": x = " << x << endl;
   }
   return x;
 }
 
-double metodaNewton(double x0, double epsilon, int& iteratii)
+double NewtonMethod(double x0, double epsilon, int& iteratii)
 {
   double x = x0;
   while (fabs(f(x)) >= epsilon)
   {
     x = x - f(x) / df(x); //formula metodei lui Newton
     iteratii++;
+    // cout << "Iteratie " << iteratii << ": x = " << x << endl;
   }
   return x;
 }
 
-double metodaAproxSuccesive(double x0, double epsilon, int& iteratii)
+double AproxMethod(double x0, double epsilon, int& iteratii)
 {
   double x = x0;
   while (fabs(f(x) - x) >= epsilon)
   {
     x = f(x); //formula metodei aproximaatiilor succesive
     iteratii++;
+    // cout << "Iteratie " << iteratii << ": x = " << x << endl;
   }
   return x;
 }
 
-double metodaSecantelor(double x0, double x1, double epsilon, int& iteratii)
+double SecantMethod(double x0, double x1, double epsilon, int& iteratii)
 {
   double x = x1;
   double x_prev = x0;
@@ -68,9 +70,11 @@ double metodaSecantelor(double x0, double x1, double epsilon, int& iteratii)
     x_prev = x;
     x = x_next;
     iteratii++;
+    // cout << "Iteratie " << iteratii << ": x = " << x << endl;
   }
   return x;
 }
+
 
 int main() {
   double epsilon = 1e-6;
@@ -88,25 +92,29 @@ int main() {
       numRadacini++;
       cout << numRadacini << ". Intervalul [" << setprecision(3) << x << ", " << x + 0.01 << "]" << endl;
 
-      int iteratiiBisectie = 0;
-      double rezBisectie = metodaBisectiei(x, x + 0.01, epsilon, iteratiiBisectie);
-      cout << "\nNumarul de iteratii in metoda Bisectiei: " << iteratiiBisectie << endl;
-      cout << "Solutia gasita prin metoda Bisectiei: " << setprecision(6) << rezBisectie << endl;
+      int itBisect = 0;
+      double resBisect= BisectMethod(a, b , epsilon, itBisect);
+      cout << "Metoda Bisectiei:\n";
+      cout << "  Iteratii: " << itBisect << endl;
+      cout << "  Solutia: " << setprecision(6) << resBisect << endl;
 
-      int iteratiiNewton = 0;
-      double rezNewton = metodaNewton((x + x + 0.01) / 2, epsilon, iteratiiNewton);
-      cout << "\nNumarul de iteratii in metoda lui Newton: " << iteratiiNewton << endl;
-      cout << "Solutia gasita prin metoda lui Newton: " << setprecision(6) << rezNewton << endl;
+      int itNewton= 0;
+      double rezNewton = NewtonMethod(-1, epsilon, itNewton);
+      cout << "Metoda Newton:\n";
+      cout << "  Iteratii: " << itNewton << endl;
+      cout << "  Solutia: " << setprecision(6) << rezNewton << endl;
 
-      int iteratiiAproxSucc = 0;
-      double rezAproximSucc = metodaAproxSuccesive((x + x + 0.01) / 2, epsilon, iteratiiAproxSucc);
-      cout << "\nNumarul de iteratii in metoda Aproximatiilor Succesive: " << iteratiiAproxSucc << endl;
-      cout << "Solutia gasita prin metoda Aproximatiilor Succesive: " << setprecision(6) << rezNewton << endl;
+      int itAprox = 0;
+      double rezAproximSucc = AproxMethod(-1, epsilon, itAprox);
+      cout << "Metoda Aproximatiilor Succesive:\n";
+      cout << "  Iteratii: " << itAprox << endl;
+      cout << "  Solutia: " << setprecision(6) << resBisect << endl;
 
-      int iteratiiSecante = 0;
-      double rezSecante = metodaSecantelor(x, x + 0.01, epsilon, iteratiiSecante);
-      cout << "\nNumarul de iteratii in metoda Secantelor: " << iteratiiSecante << endl;
-      cout << "Solutia gasita prin metoda Secantelor: " << setprecision(6) << rezSecante << endl;
+      int itSec = 0;
+      double resSecant = SecantMethod(a,b , epsilon, itSec);
+      cout << "Metoda Secantelor:\n";
+      cout << "  Iteratii: " << itSec << endl;
+      cout << "  Solutia: " << setprecision(6) << resSecant << endl;
       cout << "\n";
     }
   }

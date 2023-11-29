@@ -64,6 +64,7 @@ def sarcina_1():
 
 def sarcina_2():
     # Sarcina 2
+    s = 2 
     print("Rezultate pentru Sarcina 2:")
     print("a) bool(-30) =", bool(-30))
     print("b) bool(0.2) =", bool(0.2))

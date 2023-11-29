@@ -1,4 +1,6 @@
+
 def main():
+    
     while True:
         print("Meniu:")
         print("1. s=ProgramareaInteractiva")
@@ -56,52 +58,53 @@ def sarcina_2():
     print("k)",L [0:1]==['x','y'])
     print("l)",L[0:2]==['Python'])
 def sarcina_3():
-    b = [34, 45, 56, 38]
-    b.insert(-1, 12)
-    print("a)", b)
+    b = ['34', '45', '56', '38']
 
-    b.pop()
-    print("b)", b)
+    
+    b.insert(-1, '12')
+    print("a) După inserarea lui '12':", b)
 
-    b.remove(34)
-    print("c)", b)
+    
+    b.pop() # remove last element
+    print("b) După eliminarea ultimului element:", b)
 
+    
+    b.remove('34') # remove first 34
+    print("c) După eliminarea primei apariții a lui '34':", b)
+
+    
     b.append('doi')
-    print("d)", b)
+    print("d) După adăugarea lui 'doi':", b)
 
-    index_doi = b.index('doi')
-    print("e)", b, "Indexul pentru 'doi':", index_doi)
+    
+    count_34 = b.count('34')
+    print("f) Numărul de apariții ale valorii '34':", count_34)
 
-    count_34 = b.count(34)
-    print("f)", b, "Numărul de apariții a lui 34:", count_34)
-
+    
     b.reverse()
-    print("g)", b)
+    print("g) După inversarea listei:", b)
 
+    
     b.sort()
-    print("h)", b)
+    print("h) După sortare:", b)
 
-    l = [34, 45, 56, 38]
-    del l[0:2]
-    print("i)", b)
-
-    b.extend([1])
-    print("j)", b)
-
+ 
+    b.extend(['1'])
+    print("j) După extindere cu '1':", b)
 
 def sarcina_4():
     # Sarcina Siruri
     S = input("Introduceți șirul de caractere S: ")
     N = int(input("Introduceți numărul întreg N: "))
 
-    # Verificăm dacă N este în intervalul corect
+   
     if 0 <= N <= len(S):
-        # Obținem primul subșir până la indexul N inclusiv
+        
         subșir1 = S[:N]
 
-        # Obținem al doilea subșir de la indexul N + 1 până la sfârșit
+       
         subșir2 = S[N + 1:]
-        # Afișăm cele două subșiruri
+        
         print("Primul subșir:", subșir1)
         print("Al doilea subșir:", subșir2)
     else:
@@ -121,20 +124,17 @@ def sarcina_5():
 def sarcina_6():
     # Sarcina 6
     import math
-    numar_perechi = 0
-
-    for i in range(1, n + 1):
-        for j in range(i, n + 1):
+    def sarcina_6():
+        numar_perechi = 0
+        for i in range(1, n + 1):
+            for j in range(i, n + 1):
                 if math.gcd(i, j) == d:
                     numar_perechi += 1
                     print(f"Pereche ({i}, {j}) cu cmmdc = {d}")
-
         return numar_perechi
-
     n = int(input("Introduceți un număr natural n: "))
     d = int(input("Introduceți un număr natural d pentru cmmdc: "))
-
-    rezultat = sarcina_6(n, d)
+    rezultat = sarcina_6()
     print(f"Numărul de perechi cu cmmdc = {d} până la {n} este {rezultat}.")
 if __name__ == "__main__": #script este executat ca program principal
     main()

@@ -1,0 +1,19 @@
+/* styles.css */
+
+/* Add your custom styles here */
+body {
+  /* Example: Set a background color */
+  background-color: #f8f9fa;
+}
+
+.container-fluid {
+  /* Example: Add some padding to the container */
+  padding: 20px;
+}
+
+.card {
+  /* Example: Add some margin to the cards */
+  margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
