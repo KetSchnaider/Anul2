@@ -37,6 +37,7 @@ private:
     std::string post;
     double salariu;
 public:
+    int abc;
     Colaborator(const std::string& nume, const std::string& post, double salariu)
         : Om(nume), post(post), salariu(salariu) {}
 
@@ -75,7 +76,6 @@ public:
 
 int main() {
     Colaborator colaborator1("John Doe", "Programator", 5000.0);
-    
 
     // Testam operatorul de iesire
     std::cout << "Informatii despre colaborator:\n" << colaborator1 << "\n\n";

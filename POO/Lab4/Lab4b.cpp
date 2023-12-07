@@ -31,18 +31,16 @@ public:
         carti.push_back(carte);
     }
 
-    virtual void ScoateCarti() = 0;
-};
-
-class ButucOrdine : public ButucDeCarti {
-public:
     void ScoateCarti() {
-        std::cout << "Scoatere carti in ordine:\n";
+        std::cout << "Scoatere carti:\n";
         for (const auto& carte : carti) {
             carte.Intorsa();
         }
         std::cout << "\n";
     }
+};
+
+class ButucOrdine : public ButucDeCarti {
 };
 
 class ButucAleator : public ButucDeCarti {
