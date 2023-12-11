@@ -1,0 +1,1 @@
+Să se creeze, o ierarhie de moştenire: stilou, creion – condei de ardezie.
