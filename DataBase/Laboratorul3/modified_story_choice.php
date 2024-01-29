@@ -46,6 +46,7 @@
                 if ($characters_result->num_rows > 0) {
                     
                     
+                    
                     $characters_data = $characters_result->fetch_assoc();
                     $characteristics_data = $characteristics_result -> fetch_assoc();
                     $circumstance_data = $circumstance_result -> fetch_assoc();
@@ -53,9 +54,19 @@
                     $transport_data = $transport_result -> fetch_assoc();
                     
                     
-                    
-                    
-                    
+                    $variables = array(
+                        'second_character',
+                        'main_character',
+                        'negative_main_character',
+                        'negative_second_character',
+                        'characteristics_pers_principal',
+                        'characteristics_pers_secundar',
+                        'circumstance_circumstance',
+                        'circumstance_season',
+                        'clothes_clothes',
+                        'transport_transport'
+                    );
+                            
                     // Replace placeholders with data
                     $second_character = $characters_data['second_character'];
                     $main_character = $characters_data['main_character'];
@@ -68,6 +79,9 @@
                     $clothes_clothes = $clothes_data['clothes_for_main_character'];
                     $transport_transport = $transport_data['transport_type'];
                    
+                    foreach ($variables as $variable) {
+                        $$variable = "<span style='background-color: yellow;'>{$$variable}</span>";
+                    }
                    
                     echo "<div id='part1' class='story-part'>
                             <p>– Dormi, $second_character, vorbim altă dată. <br>

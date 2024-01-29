@@ -1,3 +1,1 @@
-L2 = ['a','b','c']
-L2 +='de'
-print(L2)
+print(len((1, )))

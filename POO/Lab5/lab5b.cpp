@@ -1,16 +1,16 @@
-// Să se creeze,o ierarhie de moştenire:rechizite de birou - stilou,creion – condei de ardezie.
+// Să se creeze,o ierarhie de moştenire:rechizite de birou - Student,Colaborator – condei de ardezie.
 
 #include <iostream>
 #include <string>
 
-class RechiziteBirou {
+class Om {
 public:
-    RechiziteBirou() {
-        std::cout << "Constructor RechiziteBirou\n";
+    Om() {
+        std::cout << "Constructor Om\n";
     }
 
-    ~RechiziteBirou() {
-        std::cout << "Destructor RechiziteBirou\n";
+    ~Om() {
+        std::cout << "Destructor Om\n";
     }
 
     void foloseste(const std::string& parametru) const {
@@ -18,9 +18,9 @@ public:
 
         // Adaugăm construcția if
         if (parametru == "s") {
-            std::cout << "Stilou folosit.\n";
+            std::cout << "Student folosit.\n";
         } else if (parametru == "c") {
-            std::cout << "Creion folosit.\n";
+            std::cout << "Colaborator folosit.\n";
         } else if (parametru == "ca") {
             std::cout << "Condeiul de ardezie folosit.\n";
         } else {
@@ -29,55 +29,55 @@ public:
     }
 };
 
-class Stilou : public RechiziteBirou {
+class Student : public Om {
 public:
-    Stilou() {
-        std::cout << "Constructor Stilou\n";
+    Student() {
+        std::cout << "Constructor Student\n";
     }
 
-    ~Stilou() {
-        std::cout << "Destructor Stilou\n";
+    ~Student() {
+        std::cout << "Destructor Student\n";
     }
 };
 
-class Creion : public RechiziteBirou {
+class Colaborator : public Om {
 public:
-    Creion() {
-        std::cout << "Constructor Creion\n";
+    Colaborator() {
+        std::cout << "Constructor Colaborator\n";
     }
 
-    ~Creion() {
-        std::cout << "Destructor Creion\n";
+    ~Colaborator() {
+        std::cout << "Destructor Colaborator\n";
     }
 };
 
-class CondeiArdezie : public Stilou, public Creion {
+class Practicant : public Student, public Colaborator {
 public:
-    CondeiArdezie() {
-        std::cout << "Constructor CondeiArdezie\n";
+    Practicant() {
+        std::cout << "Constructor Practicant\n";
     }
 
-    ~CondeiArdezie() {
-        std::cout << "Destructor CondeiArdezie\n";
+    ~Practicant() {
+        std::cout << "Destructor Practicant\n";
     }
 };
 
 int main() {
-    RechiziteBirou* creion = new Creion();
-    creion->foloseste("c");
-    delete creion;
+    Om* Colaborator = new Colaborator();
+    Colaborator->foloseste("c");
+    delete Colaborator;
 
-    RechiziteBirou* stilou = new Stilou();
-    stilou->foloseste("s");
-    delete stilou;
+    Om* Student = new Student();
+    Student->foloseste("s");
+    delete Student;
 
     // problema diamantului
-    //  RechiziteBirou* condeiardezie = new CondeiArdezie();
+    //  Om* Practicant = new Practicant();
     // specificam implicit calea
 
-     RechiziteBirou* condeiardezie = static_cast<Stilou*>(new CondeiArdezie());
-     condeiardezie->foloseste("ca");
-     delete condeiardezie;
+     Om* Practicant = static_cast<Student*>(new Practicant());
+     Practicant->foloseste("ca");
+     delete Practicant;
     
     return 0;
 }

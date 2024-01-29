@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Statistics - Moldova</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Developer Statistics - Republic of Moldova</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html" onclick="changeCategory('index')">Home</a>
+            </li>
+            <li>
+                <a href="developer.html" onclick="changeCategory('developer')">Developer</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="statistics">
+        
+        <button id="editButton" onclick="editStatistics()">Edit Statistics</button>
+        <button id="addButtonWater" onclick="addStatisticsWater()">Add Water Statistics</button>
+        <button id="addButtonWaste" onclick="addStatisticsWaste()">Add Waste Statistics</button>
+        <button id="addButtonAir" onclick="addStatisticsAir()">Add Air Statistics</button>
+
+    
+    <div id="navigation"></div>
+    <form id="addFormWater" style="display: none;">
+    <label for="addYearWater">Year:</label>
+    <select id="addYearWater" required></select>
+    
+    <label for="addZoneWater">Zone:</label>
+    <select id="addZoneWater" required></select>
+
+
+    <label for="addSubstanceWater">Substance Name:</label>
+    <input type="text" id="addSubstanceWater" required>
+
+    <label for="addDataWater">Data:</label>
+    <input type="number" id="addDataWater" required step="0.01">
+
+    <button type="button" onclick="submitWaterStatistics()">Submit</button>
+    </form>
+    
+    <form id="addFormWaste" style="display: none;">
+    <label for="addYearWaste">Year:</label>
+    <select id="addYearWaste" required></select>
+    
+    <label for="addZoneWaste">Zone:</label>
+    <select id="addZoneWaste" required></select>
+
+    
+    <label for="addCategoryWaste">Category Name:</label>
+    <input type="text" id="addCategoryWaste" required>
+    
+    <label for="addDataWaste">Data:</label>
+    <input type="number" id="addDataWaste" required step="0.01">
+    
+    <button type="button" onclick="submitWasteStatistics()">Submit</button>
+    </form>
+
+    <form id="addFormAir" style="display: none;">
+    <label for="addYearAir">Year:</label>
+    <select id="addYearAir" required></select>
+            
+    <label for="addZoneAir">Zone:</label>
+    <select id="addZoneAir" required></select>
+        
+        
+    <label for="addCategoryAir">Category Name:</label>
+    <input type="text" id="addCategoryAir" required>
+    
+    <label for="addSubstanceAir">Substance Name:</label>
+    <input type="text" id="addSubstanceAir" required>
+
+    <label for="addDataAir">Data:</label>
+    <input type="number" id="addDataAir" required step="0.01">
+        
+    <button type="button" onclick="submitAirStatistics()">Submit</button>
+    </form>
+    </section>
+ 
+    <script src="edit.js"></script>
+
+</body>
+</html>

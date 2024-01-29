@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecology Statistics - Moldova</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ecology Statistics - Republic of Moldova</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="water.html" onclick="changeCategory('water')">Water</a>
+        </li>
+        <li><a href="air.html" onclick="changeCategory('air')">Air</a></li>
+        <li>
+          <a href="waste.html" onclick="changeCategory('waste')">Waste</a>
+        </li>
+        <li>
+          <a href="developer.html" onclick="changeCategory('developer')">Developer</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="statistics">
+      <div id="recycling-rate">
+        <h2>Recycling Rate</h2>
+        <p id="recycling-percentage">45%</p>
+      </div>
+
+      <div id="waste-per-capita">
+        <h2>Waste per Capita</h2>
+        <p id="waste-volume">300 kg</p>
+      </div>
+    </section>
+
+    <section id="graphics">
+      <div id="chart-container">
+      </div>
+    </section>
+
+    <section id="calculations">
+      <div id="recycling-calculation">
+        <h2>Recycling Calculation</h2>
+        <p id="recycling-result">The total recycled amount is 150 kg.</p>
+      </div>
+
+      <div id="waste-calculation">
+        <h2>Waste per Capita Calculation</h2>
+        <p id="waste-calculation-result">
+          Each person produces 0.05 kg of waste per day.
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

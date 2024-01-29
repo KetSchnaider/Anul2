@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Statistics - Moldova</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Water Statistics - Republic of Moldova</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="air.html">Air</a></li>
+        <li><a href="water.html" onclick="changeCategory('water')">Water</a></li>
+        <li><a href="waste.html" onclick="changeCategory('waste')">Waste</a></li>
+      </ul>
+    </nav>
+
+    <div id="filter-container">
+      <select id="year-dropdown"></select>
+      <select id="water-substance-dropdown"></select>
+      <select id="zone-dropdown" multiple></select>
+      <button id="apply-button" onclick="applyFilters()">Apply</button>
+      
+    </div>
+
+    <section id="statistics">
+      <div id="watter-pollutants">
+        <h2>Water Pollutants</h2>
+        <canvas id="chart-container" width="1000" height="1000"></canvas>
+      </div>
+      <div id="total-amount-container"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="water-script.js"></script>
+  </body>
+</html>
